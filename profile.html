@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .profileContainer{
+            display: flex;
+            padding: 20px;
+            margin-top: 15px;
+            border: 1px solid black;
+            height: 90%;
+        }
+    #userImg{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        }
+        #cont{
+    margin: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+    </style>
+
+</head>
+<body>
+    <div id="cont">
+        <h1>Blog App</h1>
+      </div>
+    
+    <div class="profileContainer">
+        <form id="user-info">
+            <h1>Profile</h1>
+            <img id="userImg" src="profile.png" alt="">
+            <input id="profile" type="file"><br><br>
+            <input required id="userFullname" type="text" placeholder="Full name"><br><br>
+            <input disabled id="userEmail" type="text" placeholder="Email"><br><br>
+            <input required id="userphone" type="number" placeholder="Phone number"><br><br>
+            <textarea required name="about" id="about" cols="30" rows="6"></textarea><br>
+            <input required id="UpdateBtn" type="submit" placeholder="Update">
+        </form>
+    </div>
+    
+    <script type="module" src="index.js"></script>
+</body>
+</html>
